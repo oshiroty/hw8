@@ -1,0 +1,18 @@
+# HG changeset patch
+# User Tyler Oshiro <oshirotyn@gmail.com>
+# Date 1369618458 25200
+# Node ID 899064103977964c4ec3185cb5505d2b7f14eb98
+# Parent  1077314f416653b28e199c382667a1f11e444bdd
+Added a print statement to gcd
+
+diff --git a/sage/rings/arith.py b/sage/rings/arith.py
+--- a/sage/rings/arith.py
++++ b/sage/rings/arith.py
+@@ -1587,6 +1587,7 @@
+         TypeError: unable to find gcd
+ 
+     """
++    print("I patched sage!")
+     # Most common use case first:
+     if b is not None:
+         from sage.structure.element import get_coercion_model
